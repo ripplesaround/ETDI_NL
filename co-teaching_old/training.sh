@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES='1' python3 main.py \
+    --run_mode train \
+    --model coteach \
+    --num_gradual 10 \
+    --lr 0.001 \
+    --batch_size 128 \
+    --num_class 10  \
+    --noise_prob 0.5 \
+    --noise_type sym \
+    --dataset CIFAR10 \
+    --epochs 30
